@@ -4,7 +4,7 @@
   </parameter>
   <parameter
 		name = "ConnectionString"
-		defaultValue = "Server=myServerAddress;Database=BugNET;User Id=myUsername;Password=myPassword;" >
+		defaultValue = "Server=(local);Database=BugNET;Integrated Security=True;Pooling=False" >
     <parameterEntry
 			type="XmlFile"
 			scope="\\web\.config$"
