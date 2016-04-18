@@ -1,0 +1,23 @@
+
+Creating publisher
+	Sql server agent ADSFU\rafaelb
+	un filtered
+	all tables
+	Publication name: ITdirect_Merge_Publication
+
+	Create a snapshot of this publication immediately after the publication is created.
+	C:\Program Files\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\repldata\unc\CMPT740-11_ITDIRECT_ITDIRECT_MERGE_PUBLICATION
+
+	RowsGuid? added to tables... some sp had to be adapted
+
+Creating subscription
+	Connect to the target database (firewall configuration)
+	Credentials: Agent for subscriber: ADSFU\rafaelb for both distributer 
+	Schedule: Run continuosly
+	Initialize: Immediately
+
+
+
+
+Conflict solver
+
