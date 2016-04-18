@@ -226,14 +226,9 @@ namespace BugNET.Providers.DataProviders
                 sqlCmd.Connection = cn;
                 cn.Open();
 
-                try
-                {
+                
                     gcfr(sqlCmd.ExecuteReader(), ref list);
-                }
-                catch (System.Exception e)
-                {
-                    int x = 0;
-                }
+                
 
             }
         }

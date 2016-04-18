@@ -1,2 +1,2 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="BugNET.UserControls.Footer" %>
-<p><asp:label ID="lclPoweredBy" runat="server" Text="Showcasing Master to Master Replication on SQL Server 2008 R2 " meta:resourcekey="lclPoweredBy" /> </p>
+<p><asp:label ID="lclPoweredBy" runat="server" Text="Showcasing Master to Master (merge) replication - SQL Server 2008 R2 " meta:resourcekey="lclPoweredBy" /> </p>

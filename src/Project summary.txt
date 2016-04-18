@@ -8,7 +8,7 @@ Creating publisher
 	Create a snapshot of this publication immediately after the publication is created.
 	C:\Program Files\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\repldata\unc\CMPT740-11_ITDIRECT_ITDIRECT_MERGE_PUBLICATION
 
-	RowsGuid? added to tables... some sp had to be adapted
+	
 
 Creating subscription
 	Connect to the target database (firewall configuration)
@@ -17,7 +17,13 @@ Creating subscription
 	Initialize: Immediately
 
 
-
+Stored procedures/view not possible to replicate... I had to create a script to manually create them on the target db
+RowsGuid? added to tables... some sp had to be adapted
+Even though rowguid has a default value funct()
+I had to modify the sp
 
 Conflict solver
-
+The latest change wins in some of the cases: 
+- Issue modification
+- Issue history
+Full priority to the headquaters (
