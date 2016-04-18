@@ -2350,7 +2350,9 @@
       <LastGenOutput>Web.sitemap.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="UserControls\App_LocalResources\Footer.ascx.resx" />
+    <Content Include="UserControls\App_LocalResources\Footer.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_GlobalResources\Exceptions.es-ES.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Exceptions.es-ES.designer.cs</LastGenOutput>
@@ -2675,7 +2677,9 @@
     <Content Include="Queries\App_LocalResources\QueryList.aspx.ro-RO.resx" />
     <Content Include="UserControls\App_LocalResources\CategoryTreeView.ascx.ro-RO.resx" />
     <Content Include="UserControls\App_LocalResources\DisplayIssues.ascx.ro-RO.resx" />
-    <Content Include="UserControls\App_LocalResources\Footer.ascx.ro-RO.resx" />
+    <Content Include="UserControls\App_LocalResources\Footer.ascx.ro-RO.resx">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="UserControls\App_LocalResources\PickCategory.ascx.ro-RO.resx" />
     <Content Include="UserControls\App_LocalResources\PickImage.ascx.ro-RO.resx" />
     <Content Include="UserControls\App_LocalResources\PickMilestone.ascx.ro-RO.resx" />
@@ -2760,10 +2764,6 @@
       <Project>{5A0AE67B-1F8C-4A6D-A02B-B57BB219288F}</Project>
       <Name>BugNET.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BugNET.MailboxReader\BugNET.MailboxReader.csproj">
-      <Project>{D10EDECB-ADB2-4E5F-93A6-00D09E86B906}</Project>
-      <Name>BugNET.MailboxReader</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Library\HttpModules\Authentication\HttpModule.Authentication.csproj">
       <Project>{72be8d7e-b026-45ee-8613-dfb1bb70fd02}</Project>
       <Name>HttpModule.Authentication</Name>
@@ -2771,10 +2771,6 @@
     <ProjectReference Include="..\Library\HttpModules\Localization\HttpModule.Localization.csproj">
       <Project>{74376c46-4d55-4891-85d7-06a490fa9fd5}</Project>
       <Name>HttpModule.Localization</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Library\HttpModules\MailBoxReader\HttpModule.MailBoxReader.csproj">
-      <Project>{4386aa43-f3fc-476d-b7e0-03db537c88e0}</Project>
-      <Name>HttpModule.MailBoxReader</Name>
     </ProjectReference>
     <ProjectReference Include="..\Library\Providers\DataProviders\SqlDataProvider\Provider.SqlDataProvider.csproj">
       <Project>{df8c87fa-3398-4aee-99b0-d47f1831c158}</Project>
@@ -2987,7 +2983,9 @@
     <Content Include="UserControls\App_LocalResources\DisplayIssues.ascx.de-DE.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="UserControls\App_LocalResources\Footer.ascx.de-DE.resx" />
+    <Content Include="UserControls\App_LocalResources\Footer.ascx.de-DE.resx">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="UserControls\App_LocalResources\PickCategory.ascx.de-DE.resx" />

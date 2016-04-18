@@ -37,15 +37,15 @@ namespace BugNET.Administration.Host
                 Response.Redirect("~/Errors/AccessDenied.aspx");
 
             _menuItems.Add(GetLocalResourceObject("Basic").ToString(), "page_white_gear.png");
-            _menuItems.Add(GetLocalResourceObject("Authentication").ToString(), "lock.gif");
-            _menuItems.Add(GetLocalResourceObject("Mail").ToString(), "email.gif");
-            _menuItems.Add(GetLocalResourceObject("Logging").ToString(), "page_white_error.png");
-            _menuItems.Add(GetLocalResourceObject("Subversion").ToString(), "svnLogo_sm.jpg");
-            _menuItems.Add(GetLocalResourceObject("Notifications").ToString(), "email_go.gif");
-            _menuItems.Add(GetLocalResourceObject("Attachments").ToString(), "attach.gif");
-            _menuItems.Add(GetLocalResourceObject("POP3Mailbox").ToString(), "mailbox.png");
-            _menuItems.Add(GetLocalResourceObject("Languages").ToString(), "page_white_world.png");
-            _menuItems.Add(GetLocalResourceObject("UserCustomFields").ToString(), "user_edit.gif");
+           // _menuItems.Add(GetLocalResourceObject("Authentication").ToString(), "lock.gif");
+           // _menuItems.Add(GetLocalResourceObject("Mail").ToString(), "email.gif");
+           // _menuItems.Add(GetLocalResourceObject("Logging").ToString(), "page_white_error.png");
+           // _menuItems.Add(GetLocalResourceObject("Subversion").ToString(), "svnLogo_sm.jpg");
+           // _menuItems.Add(GetLocalResourceObject("Notifications").ToString(), "email_go.gif");
+           // _menuItems.Add(GetLocalResourceObject("Attachments").ToString(), "attach.gif");
+           // _menuItems.Add(GetLocalResourceObject("POP3Mailbox").ToString(), "mailbox.png");
+           // _menuItems.Add(GetLocalResourceObject("Languages").ToString(), "page_white_world.png");
+           // _menuItems.Add(GetLocalResourceObject("UserCustomFields").ToString(), "user_edit.gif");
 
             AdminMenu.DataSource = _menuItems;
             AdminMenu.DataBind();   

@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lclPoweredBy.Text" xml:space="preserve">
-    <value>Powered by </value>
+    <value>Showcasing Master to Master replication to provide High Availability - SQL Server 2008 R2</value>
   </data>
 </root>
