@@ -29,17 +29,17 @@ namespace BugNET.UserInterfaceLayer.WebControls
 
                 Items.Insert(1, oItemProject);
                 oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/Projects/ProjectSummary/{0}", projectId), Resources.SharedResources.ProjectSummary, this));
-                oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/Projects/Roadmap/{0}", projectId), Resources.SharedResources.Roadmap,this));
-                oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/Projects/ChangeLog/{0}", projectId), Resources.SharedResources.ChangeLog, this));
-                oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/Projects/ProjectCalendar/{0}", projectId), Resources.SharedResources.Calendar, this));
+                //oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/Projects/Roadmap/{0}", projectId), Resources.SharedResources.Roadmap,this));
+                //oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/Projects/ChangeLog/{0}", projectId), Resources.SharedResources.ChangeLog, this));
+                //oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/Projects/ProjectCalendar/{0}", projectId), Resources.SharedResources.Calendar, this));
 
-                if (!string.IsNullOrEmpty(ProjectManager.GetById(projectId).SvnRepositoryUrl))
-                    oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/SvnBrowse/SubversionBrowser.aspx?pid={0}", projectId), Resources.SharedResources.Repository, this));
+                //if (!string.IsNullOrEmpty(ProjectManager.GetById(projectId).SvnRepositoryUrl))
+                    //oItemProject.Items.Add(new SuckerMenuItem(string.Format("~/SvnBrowse/SubversionBrowser.aspx?pid={0}", projectId), Resources.SharedResources.Repository, this));
 
                 var oItemIssues = new SuckerMenuItem("#", Resources.SharedResources.Issues, this, "dropdown");
 
                 oItemIssues.Items.Add(new SuckerMenuItem(string.Format("~/Issues/IssueList.aspx?pid={0}", projectId), Resources.SharedResources.Issues, this));
-                oItemIssues.Items.Add(new SuckerMenuItem(string.Format("~/Queries/QueryList.aspx?pid={0}", projectId), Resources.SharedResources.Queries, this));
+                //oItemIssues.Items.Add(new SuckerMenuItem(string.Format("~/Queries/QueryList.aspx?pid={0}", projectId), Resources.SharedResources.Queries, this));
                 Items.Insert(2, oItemIssues);
 
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
@@ -64,7 +64,7 @@ namespace BugNET.UserInterfaceLayer.WebControls
                 oItemAdmin.Items.Add(new SuckerMenuItem("~/Administration/Projects/ProjectList", Resources.SharedResources.Projects, this));
                 oItemAdmin.Items.Add(new SuckerMenuItem("~/Administration/Users/UserList", Resources.SharedResources.UserAccounts, this));
                 oItemAdmin.Items.Add(new SuckerMenuItem("~/Administration/Host/Settings", Resources.SharedResources.ApplicationConfiguration, this));
-                oItemAdmin.Items.Add(new SuckerMenuItem("~/Administration/Host/LogViewer", Resources.SharedResources.LogViewer, this));
+                //oItemAdmin.Items.Add(new SuckerMenuItem("~/Administration/Host/LogViewer", Resources.SharedResources.LogViewer, this));
             }
 
             if(oItemAdmin.Items.Count > 0)
