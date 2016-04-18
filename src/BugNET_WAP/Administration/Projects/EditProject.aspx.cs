@@ -70,12 +70,12 @@ namespace BugNET.Administration.Projects
             _menuItems.Add(GetLocalResourceObject("IssueTypes").ToString(), "bug.gif");
             _menuItems.Add(GetLocalResourceObject("Resolutions").ToString(), "accept.gif");
             _menuItems.Add(GetLocalResourceObject("Members").ToString(), "users_group.png");
-            _menuItems.Add(GetLocalResourceObject("SecurityRoles").ToString(), "shield.gif");
-            _menuItems.Add(GetLocalResourceObject("Notifications").ToString(), "email_go.gif");
-            _menuItems.Add(GetLocalResourceObject("CustomFields").ToString(), "textfield.gif");
-            _menuItems.Add(GetLocalResourceObject("Mailboxes").ToString(), "email.gif");
-            _menuItems.Add(GetLocalResourceObject("Subversion").ToString(), "svnLogo_sm.jpg");
-            _menuItems.Add(GetLocalResourceObject("Defaults").ToString(), "Default.png");
+            //_menuItems.Add(GetLocalResourceObject("SecurityRoles").ToString(), "shield.gif");
+            //_menuItems.Add(GetLocalResourceObject("Notifications").ToString(), "email_go.gif");
+            //_menuItems.Add(GetLocalResourceObject("CustomFields").ToString(), "textfield.gif");
+            //_menuItems.Add(GetLocalResourceObject("Mailboxes").ToString(), "email.gif");
+            //_menuItems.Add(GetLocalResourceObject("Subversion").ToString(), "svnLogo_sm.jpg");
+           // _menuItems.Add(GetLocalResourceObject("Defaults").ToString(), "Default.png");
 
             AdminMenu.DataSource = _menuItems;
             AdminMenu.DataBind();    
